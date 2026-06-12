@@ -7,4 +7,5 @@ Use this to flash + run:
 Example workflow: 
 
 `west build -b frdm_mcxn947/mcxn947/cpu0 my_app --pristine`
+
 `west flash -r linkserver`
