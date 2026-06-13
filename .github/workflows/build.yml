@@ -49,6 +49,6 @@ jobs:
         with:
           name: firmware-${{ github.sha }}
           path: |
-            - zephyr-in-production/build/sysboot/mcuboot/zephyr/zephyr.bin
-            - zephyr-in-production/build/sysboot/app/zephyr/zephyr.signed.bin
+            packt-training/build/sysboot/mcuboot/zephyr/zephyr.bin
+            packt-training/build/sysboot/app/zephyr/zephyr.signed.bin
           retention-days: 30
