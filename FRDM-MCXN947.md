@@ -27,4 +27,20 @@ A: Tweak configuration (of MCUboot) to save space (?)
 
 Extract public key 
 
-imgtool getpub -k keys/my-key.pem -e pem
+`imgtool getpub -k keys/my-key.pem -e pem`
+
+Tips for speeding up CI job: 
+ - cache container
+ - use ccache
+ - use own machine (wired to GH Actions)
+
+Release build: 
+
+`west build -b training/mcxn947/cpu0 app --sysbuild -d build/release --pristine -S release`
+`west flash -r linkserver -d build/release`
+
+Hardening audit: 
+
+`west build -b training/mcxn947/cpu0 -d build/release/app -S release app -t hardenconfig`
+
+This compares the recommended project config against one got compiled, and test FAIL based on that

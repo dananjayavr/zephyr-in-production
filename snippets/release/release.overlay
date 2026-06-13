@@ -1,0 +1,6 @@
+/ {
+aliases {
+led0 = &blue_led;
+/* release builds signal on blue */
+};
+};
