@@ -1,0 +1,6 @@
+board:
+  name: training
+  full_name: Training Board
+  vendor: acme
+  socs:
+    - name: mcxn947

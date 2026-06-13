@@ -1,3 +1,3 @@
 build:
   settings:
-    snippet_root: .
+    board_root: .

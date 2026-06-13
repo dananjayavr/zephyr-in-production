@@ -1,0 +1,10 @@
+/ {
+aliases {
+/* devkit drives the red led; production uses green */
+led0 = &green_led;
+};
+};
+
+/ {
+zephyr,user { blink-period-ms = <2000>; };
+};
